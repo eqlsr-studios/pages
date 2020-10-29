@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ./ --cache --ext .js",
-    "lint:fix": "eslint . --ext .js --fix",
+    "lint": "eslint ./ --cache --ext .js --ignore-pattern .gitignore",
+    "lint:fix": "eslint . --ext .js --fix --ignore-pattern .gitignore",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": ["precommit-msg", "lint"],

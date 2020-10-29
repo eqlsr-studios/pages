@@ -1,6 +1,6 @@
 {
   "name": "pages",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,10 @@
     "lint:fix": "eslint . --ext .js --fix --ignore-pattern .gitignore",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
-  "pre-commit": ["precommit-msg", "lint"],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "dependencies": {
     "next": "10.0.0",
     "react": "17.0.1",
@@ -27,8 +30,8 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "pre-commit": "^1.2.2",
-    "purgecss": "^3.0.0"
+    "pre-commit": "^1.2.2"
   }
 }
